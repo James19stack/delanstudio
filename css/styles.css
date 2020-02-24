@@ -1,0 +1,36 @@
+.body{
+    background-image: url(images/h_img.jpg);
+    text-align: center;
+}
+.service{
+text-align: center;
+background-image: url(images/s_image.jpg);
+color: white;
+height: 300px;
+padding-top:100px ;
+background-size: cover;
+}
+.what{
+    text-align: center;
+}
+#pic1 img{
+    width:100% ;
+}
+.portfolio{
+    text-align: center;
+}
+.form{
+    text-align: center;
+    background-image: url(images/work4.jpg);
+    background-size: cover;
+   color: white; 
+}
+.form input{
+    color: white;
+}
+.form textarea{
+    color: white;
+}
+#day{
+    display: none;
+}

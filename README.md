@@ -15,3 +15,4 @@ Email:mirarajames29@gmail.com
 *MIT License*
 Copyright (c) {2020} **James Mirara**
 #### Here is a link to the website 
+https://james19stack.github.io/delanstudio/

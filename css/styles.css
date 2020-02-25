@@ -1,36 +1,37 @@
-.body{
-    background-image: url(images/h_img.jpg);
+.home{
+    background-image: url(../images/h_img.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 660px;
+    padding-top: 10%;
     text-align: center;
 }
-.service{
+.mouse {
+    padding-top: 13%;
+}
+#about {
+    text-align: center;
+}
+#services{
 text-align: center;
-background-image: url(images/s_image.jpg);
+background-image: url(../images/s_image.jpg);
 color: white;
 height: 300px;
 padding-top:100px ;
 background-size: cover;
 }
-.what{
+#work{
     text-align: center;
 }
-#pic1 img{
-    width:100% ;
+#hide{
+    display: none;
 }
-.portfolio{
-    text-align: center;
+#portfolio .container .row img{
+    width: 100%;
 }
-.form{
-    text-align: center;
-    background-image: url(images/work4.jpg);
-    background-size: cover;
-   color: white; 
+#devhide{
+    display: none;
 }
-.form input{
-    color: white;
-}
-.form textarea{
-    color: white;
-}
-#day{
+#pmhide {
     display: none;
 }

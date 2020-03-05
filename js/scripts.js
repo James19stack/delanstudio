@@ -1,68 +1,90 @@
-$(document).ready(function(){
-    $("#des").click(function(){
-        $("#show").toggle();
-        $("#hide").toggle();
+//UserInterface Logic
+$(document).ready(function() {
+    $("div#design").click(function() {
+      $("div#content").toggle();
+      $("div#design").toggle();
     });
-    $("#dev").click(function(){
-        $("#devshow").toggle();
-        $("#devhide").toggle();
+    $("div#content").click(function() {
+      $("div#content").toggle();
+      $("div#design").toggle();
     });
-    $("#proman").click(function(){
-        $("#pmshow").toggle();
-        $("#pmhide").toggle();
+    $("div#dev").click(function() {
+      $("div#dev-content").toggle();
+      $("div#dev").toggle();
     });
-    $('.text').hide();
-    $('.imgs1').animate({
-        opacity:1
+    $("div#dev-content").click(function() {
+      $("div#dev-content").toggle();
+      $("div#dev").toggle();
     });
-    $('.imgs1').hover(function() {
-        $(this).find('.text1').fadeIn(300);
-      }, function() {
-        $(this).find('.text1').fadeOut(100);  
-      });
-      $('.imgs2').hover(function() {
-        $(this).find('.text2').fadeIn(300);
-      }, function() {
-        $(this).find('.text2').fadeOut(100);  
-      });
-      $('.imgs3').hover(function() {
-        $(this).find('.text3').fadeIn(300);
-      }, function() {
-        $(this).find('.text3').fadeOut(100);  
-      });
-      $('.imgs4').hover(function() {
-        $(this).find('.text4').fadeIn(300);
-      }, function() {
-        $(this).find('.text4').fadeOut(100);  
-      });
-      $('.imgs5').hover(function() {
-        $(this).find('.text5').fadeIn(300);
-      }, function() {
-        $(this).find('.text5').fadeOut(100);  
-      });
-      $('.imgs6').hover(function() {
-        $(this).find('.text6').fadeIn(300);
-      }, function() {
-        $(this).find('.text6').fadeOut(100);  
-      });
-      $('.imgs7').hover(function() {
-        $(this).find('.text7').fadeIn(300);
-      }, function() {
-        $(this).find('.text7').fadeOut(100);  
-      });
-      $('.imgs8').hover(function() {
-        $(this).find('.text8').fadeIn(300);
-      }, function() {
-        $(this).find('.text8').fadeOut(100);  
-      });
-});
-// document.getElementById("button").onclick =function(){
-//     Var name = ""
-//     var email = ""
-//     var comment = ""
-    
+    $("div#product").click(function() {
+      $("div#prod-content").toggle();
+      $("div#product").toggle();
+    });
+    $("div#prod-content").click(function() {
+      $("div#prod-content").toggle();
+     $("div#product").toggle();
+    });
 
-//     name=document.getElementById("name").Value
-//     email=document.getElementById("email").Value
-//     comment = document.getElementById("info").value
-// }
+    $("#col-1").hover(function() {
+      $("#text1").fadeTo("slow",1);
+      $("#photo1").fadeTo("slow",0.4);
+      },function() {
+        $("#text1").fadeTo("slow",0);
+        $("#photo1").fadeTo("slow",1);
+      });
+    $("#col-2").hover(function() {
+      $("#text2").fadeTo("slow",1);
+      $("#photo2").fadeTo("slow",0.4);
+      },function() {
+        $("#text2").fadeTo("slow",0);
+        $("#photo2").fadeTo("slow",1);
+      });
+    $("#col-3").hover(function() {
+      $("#text3").fadeTo("slow",1);
+      $("#photo3").fadeTo("slow",0.4);;
+      },function() {
+        $("#text3").fadeTo("slow",0);
+        $("#photo3").fadeTo("slow",1);
+      });
+    $("#col-4").hover(function() {
+      $("#text4").fadeTo("slow",1);
+      $("#photo4").fadeTo("slow",0.4);
+      },function() {
+        $("#text4").fadeTo("slow",0);
+        $("#photo4").fadeTo("slow",1);
+      });
+    $("#col-5").hover(function() {
+      $("#text5").fadeTo("slow",1);
+      $("#photo5").fadeTo("slow",0.4);
+      },function() {
+        $("#text5").fadeTo("slow",0);
+        $("#photo5").fadeTo("slow",1);
+    });
+    $("#col-6").hover(function() {
+      $("#text6").fadeTo("slow",1);
+      $("#photo6").fadeTo("slow",0.4);
+      },function() {
+        $("#text6").fadeTo("slow",0);
+        $("#photo6").fadeTo("slow",1);
+      });
+    $("#col-7").hover(function() {
+      $("#text7").fadeTo("slow",1);
+      $("#photo7").fadeTo("slow",0.4);
+      },function() {
+        $("#text7").fadeTo("slow",0);
+        $("#photo7").fadeTo("slow",1);
+      });
+    $("#col-8").hover(function() {
+      $("#text8").fadeTo("slow",1);
+      $("#photo8").fadeTo("slow",0.4);
+      },function() {
+        $("#text8").fadeTo("slow",0);
+        $("#photo8").fadeTo("slow",1);
+      });
+      //Business Logic
+      $("form").submit(function() {
+        var name= $("input#name").val();
+        alert("We've received your message "+name+". Thank you for contacting us");
+        event.preventDefault();
+      });
+  });
